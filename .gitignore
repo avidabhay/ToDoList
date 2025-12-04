@@ -1,0 +1,52 @@
+### Maven ###
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### macOS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+
+### Spring Boot ###
+*.log
+*.gz
+*.tmp
+
+### Application Properties (if contains secrets) ###
+# Uncomment if you have sensitive data in these files
+# application-local.properties
+# application-dev.properties
+
+### Docs
+/docs
