@@ -1,0 +1,59 @@
+feat: Complete Spring Boot ToDoList REST API with multi-database support
+
+## Features
+- Full CRUD operations for todos (Create, Read, Update, Delete)
+- Search and filter functionality (by keyword and completion status)
+- Toggle completion endpoint for quick updates
+- RESTful API design with proper HTTP status codes
+
+## Tech Stack
+- Java 21 + Spring Boot 3.2.1
+- Spring Data JPA for data access
+- Multiple database support: H2, MySQL 8.0, PostgreSQL 16
+- JUnit 5, Mockito, AssertJ for testing
+- Maven for build management
+
+## Testing
+- 28 comprehensive tests (20 unit + 8 integration)
+- 100% coverage of service and controller methods
+- All tests passing ✅
+
+## Docker Support
+- Multi-stage Dockerfile for optimized images
+- 3 Docker Compose configurations:
+  - docker-compose-local.yml (H2 for testing)
+  - docker-compose-mysql.yml (MySQL for local dev)
+  - docker-compose.yml (PostgreSQL for production)
+
+## Configuration
+- Profile-based configuration (dev, mysql, prod)
+- H2 for local development
+- MySQL/PostgreSQL for production
+- Environment-specific application properties
+
+## Code Quality
+- Comprehensive JavaDoc on all classes and methods
+- SLF4J logging throughout application
+- Global exception handling with structured error responses
+- Input validation and error handling
+- Clean architecture (Controller → Service → Repository → Entity)
+
+## Documentation
+- Detailed README with command reference for all deployment options
+- Configuration guide for each database
+- Deployment guide for Render.com
+- Testing checklist with step-by-step instructions
+- Future scope document with enhancement ideas
+
+## Project Structure
+- Layered architecture with clear separation of concerns
+- DTOs for API contracts
+- Custom exceptions for error handling
+- Comprehensive test suite
+
+## Deployment Ready
+- Configured for Render.com deployment
+- Docker images ready for containerized deployment
+- Multiple database options for different environments
+
+Author: Abhay (avidAbhay)

@@ -50,3 +50,7 @@ Thumbs.db
 
 ### Docs
 /docs
+
+### Docker ###
+.dockerignore
+docker-compose.override.yml
