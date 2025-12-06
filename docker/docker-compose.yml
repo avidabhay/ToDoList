@@ -16,7 +16,7 @@ services:
     networks:
       - todolist-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U todolist"]
+      test: [ "CMD-SHELL", "pg_isready -U todolist" ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -24,8 +24,8 @@ services:
   # Spring Boot Application
   app:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: docker/Dockerfile
     container_name: todolist-app
     environment:
       SPRING_PROFILES_ACTIVE: prod
@@ -41,6 +41,7 @@ services:
 
 volumes:
   postgres_data:
+
 
 networks:
   todolist-network:

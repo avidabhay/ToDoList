@@ -48,8 +48,8 @@ Thumbs.db
 # application-local.properties
 # application-dev.properties
 
-### Docs
-/docs
+### Docs (local development only)
+/docs/project-documentation
 
 ### Docker ###
 .dockerignore
