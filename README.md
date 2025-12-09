@@ -18,7 +18,7 @@ A production-ready Spring Boot REST API for managing todos.
 
 ```bash
 # Clone repository
-git clone https://github.com/avidAbhay/todolist-api.git
+git clone https://github.com/avidabhay/ToDoList.git
 cd ToDoList
 
 # Install dependencies

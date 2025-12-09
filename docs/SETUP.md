@@ -10,7 +10,7 @@
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/avidAbhay/todolist-api.git
+   git clone https://github.com/avidabhay/ToDoList.git
    cd ToDoList
    ```
 
