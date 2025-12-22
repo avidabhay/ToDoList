@@ -2,26 +2,22 @@
 FROM maven:3.9-eclipse-temurin-21-alpine AS build
 
 WORKDIR /build
-COPY ../ .
 
-# Copy pom.xml and download dependencies (cached layer)
-COPY ../pom.xml .
-RUN mvn dependency:go-offline -B
-
-# Copy source code
+# Copy project files
+COPY ../pom.xml ./pom.xml
 COPY ../src ./src
 
-# Build the application (skip tests for faster builds)
+# Download dependencies and build
+RUN mvn dependency:go-offline -B
 RUN mvn clean package -DskipTests
 
 # Runtime stage - smaller image
 FROM eclipse-temurin:21-jre-alpine
 
-# Set working directory
 WORKDIR /app
 
 # Copy the jar from build stage
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /build/target/*.jar app.jar
 
 # Expose port
 EXPOSE 8080
